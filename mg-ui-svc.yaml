@@ -4,7 +4,7 @@ metadata:
   name: mg-ui
 spec:
   ports:
-  - port: 80
+  - port: 443
     targetPort: 80
   selector:
     app: mg-ui
