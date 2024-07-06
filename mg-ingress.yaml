@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: guestbook-ingress
+  name: mg-ingress
   namespace: default
   annotations:
     kubernetes.io/ingress.class: alb
@@ -11,13 +11,13 @@ metadata:
     external-dns.alpha.kubernetes.io/ttl: "60"
 spec:
   rules:
-    - host: guestbook.michael-grossmann.info
+    - host: mg.michael-grossmann.info
       http:
         paths:
           - path: /*
             pathType: ImplementationSpecific
             backend:
               service:
-                name: guestbook-ui
+                name: mg-ui
                 port:
                   number: 80
