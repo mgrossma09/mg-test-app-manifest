@@ -9,6 +9,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
     external-dns.alpha.kubernetes.io/ttl: "60"
+    alb.ingress.kubernetes.io/group.name: "shared-alb-group"
 spec:
   rules:
     - host: mg.michael-grossmann.info
