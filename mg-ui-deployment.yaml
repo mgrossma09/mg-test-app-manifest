@@ -14,7 +14,7 @@ spec:
         app: mg-ui
     spec:
       containers:
-        - image: mischl01/mgnginx1:0.2
-          name: mg-ui
-          ports:
-            - containerPort: 80
+      - image: mischl01/mgnginx1:0.2
+        name: mg-ui
+        ports:
+        - containerPort: 80
