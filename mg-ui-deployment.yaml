@@ -13,6 +13,7 @@ spec:
       labels:
         app: mg-ui
     spec:
+      serviceAccountName: mg-service-account
       containers:
       - image: mischl01/mgnginx1:0.3
         name: mg-ui
