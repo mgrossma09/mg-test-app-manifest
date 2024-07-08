@@ -17,13 +17,13 @@ spec:
       containers:
       - image: mischl01/mgnginx1:0.3
         name: mg-ui
-	resources:
-	  limits:
-	    cpu: 1
-	    memory: 1Gi
-	  requests:
-	    cpu: 2
-	    memory: 2Gi
+        resources:
+          limits:
+            cpu: 1
+            memory: 1Gi
+          requests:
+            cpu: 2
+            memory: 2Gi
         ports:
         - containerPort: 80
 
