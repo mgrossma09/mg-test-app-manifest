@@ -19,11 +19,11 @@ spec:
         name: mg-ui
         resources:
           limits:
-            cpu: 1
-            memory: 1Gi
+            cpu: 0.8m
+            memory: 800Mi
           requests:
-            cpu: 2
-            memory: 2Gi
+            cpu: 0.9m
+            memory: 900Mi
         ports:
         - containerPort: 80
 
