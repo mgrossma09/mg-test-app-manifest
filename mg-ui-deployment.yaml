@@ -17,6 +17,12 @@ spec:
       containers:
       - image: mischl01/mgnginx1:0.3
         name: mg-ui
+        env:
+        - name: MG_K8S_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: mg-k8s-secret
+              key: mg-k8s-secret-key
         ports:
         - containerPort: 80
 
