@@ -17,8 +17,6 @@ spec:
       containers:
       - image: mischl01/mgnginx1:0.3
         name: mg-ui
-        command: ["sh", "-c"]
-        args: ["echo test123"]
         env:
         - name: MG_K8S_SECRET
           valueFrom:
