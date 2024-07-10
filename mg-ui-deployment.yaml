@@ -15,7 +15,7 @@ spec:
     spec:
       serviceAccountName: mg-service-account
       containers:
-      - image: mischl01/mgnginx1:0.5
+      - image: mischl01/mgnginx1:0.9
         name: mg-ui
         env:
         - name: MG_K8S_SECRET
